@@ -81,15 +81,30 @@ def run_ml_app():
         reguler = 0
         small = 1
 
-    topping_list = ['beef','black papper','chicken','meat','mozzarella','mushrooms',
-    'onion','papperoni','sausage','smoked beef','tuna','vegetables']
+    topping_list = ['beef','black papper','chicken','meat','mozzarella','mushrooms','onion','papperoni','sausage','smoked beef','tuna','vegetables']
     topping = st.selectbox('토핑을 선택하세요', topping_list)
+    if topping == 'beef':
+        beef = 1
+        black_papper=0
+        chicken=0
+        meat=0
+        mozzarella=0
+        mushrooms=0
+        onion=0
+        papperoni=0
+        sausage=0
+        smoked_beef=0
+        tuna=0
+        vegetables=0
+
     
+            
     
     # 2. 모델에 예측한다.
     # 2-1 신규데이터를 넘파이로 만든다.
-    new_data = np.array([diameter,extra_sauce,extra_cheese,extra_mushrooms,xl,jumbo,large,medium,reguler,small])
-    new_data = new_data.reshape(1,5)
+    new_data = np.array([diameter,extra_sauce,extra_cheese,extra_mushrooms,xl,jumbo,large,medium,reguler,small,
+                            beef,black_papper,chicken,meat,mozzarella,mushrooms,onion,papperoni,sausage,smoked_beef,tuna,vegetables])
+    new_data = new_data.reshape(1,22)
 
     # 2-2 스케일러와 인공지능을 변수로 불러온다
     scaler_X = joblib.load('data/scaler_X.pkl')
@@ -115,4 +130,4 @@ def run_ml_app():
     y_pred = y_pred.round()
 
     if btn :
-        st.write('< 예측 결과 > " 당신의 행복 지수는 {} 입니다. " '.format(y_pred[0,0]))
+        st.write('< 예측 결과 > " 피자의 가격은 {} rp 입니다. " '.format(y_pred[0,0]))
