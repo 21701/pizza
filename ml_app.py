@@ -97,6 +97,163 @@ def run_ml_app():
         tuna=0
         vegetables=0
 
+    elif topping == 'black papper':
+        beef = 0
+        black_papper=1
+        chicken=0
+        meat=0
+        mozzarella=0
+        mushrooms=0
+        onion=0
+        papperoni=0
+        sausage=0
+        smoked_beef=0
+        tuna=0
+        vegetables=0
+
+    elif topping == 'chicken':
+        beef = 0
+        black_papper=0
+        chicken=1
+        meat=0
+        mozzarella=0
+        mushrooms=0
+        onion=0
+        papperoni=0
+        sausage=0
+        smoked_beef=0
+        tuna=0
+        vegetables=0
+
+    elif topping == 'meat':
+        beef = 0
+        black_papper=0
+        chicken=0
+        meat=1
+        mozzarella=0
+        mushrooms=0
+        onion=0
+        papperoni=0
+        sausage=0
+        smoked_beef=0
+        tuna=0
+        vegetables=0
+
+    elif topping == 'mozzarella':
+        beef = 0
+        black_papper=0
+        chicken=0
+        meat=0
+        mozzarella=1
+        mushrooms=0
+        onion=0
+        papperoni=0
+        sausage=0
+        smoked_beef=0
+        tuna=0
+        vegetables=0
+
+    elif topping == 'mushrooms':
+        beef = 0
+        black_papper=0
+        chicken=0
+        meat=0
+        mozzarella=0
+        mushrooms=1
+        onion=0
+        papperoni=0
+        sausage=0
+        smoked_beef=0
+        tuna=0
+        vegetables=0
+
+    elif topping == 'onion':
+        beef = 0
+        black_papper=0
+        chicken=0
+        meat=0
+        mozzarella=0
+        mushrooms=0
+        onion=1
+        papperoni=0
+        sausage=0
+        smoked_beef=0
+        tuna=0
+        vegetables=0
+
+    elif topping == 'papperoni':
+        beef = 0
+        black_papper=0
+        chicken=0
+        meat=0
+        mozzarella=0
+        mushrooms=0
+        onion=0
+        papperoni=1
+        sausage=0
+        smoked_beef=0
+        tuna=0
+        vegetables=0
+
+    elif topping == 'sausage':
+        beef = 0
+        black_papper=0
+        chicken=0
+        meat=0
+        mozzarella=0
+        mushrooms=0
+        onion=0
+        papperoni=0
+        sausage=1
+        smoked_beef=0
+        tuna=0
+        vegetables=0
+
+    elif topping == 'smoked beef':
+        beef = 0
+        black_papper=0
+        chicken=0
+        meat=0
+        mozzarella=0
+        mushrooms=0
+        onion=0
+        papperoni=0
+        sausage=0
+        smoked_beef=1
+        tuna=0
+        vegetables=0
+
+    elif topping == 'tuna':
+        beef = 0
+        black_papper=0
+        chicken=0
+        meat=0
+        mozzarella=0
+        mushrooms=0
+        onion=0
+        papperoni=0
+        sausage=0
+        smoked_beef=0
+        tuna=1
+        vegetables=0
+
+    elif topping == 'vegetables':
+        beef = 0
+        black_papper=0
+        chicken=0
+        meat=0
+        mozzarella=0
+        mushrooms=0
+        onion=0
+        papperoni=0
+        sausage=0
+        smoked_beef=0
+        tuna=0
+        vegetables=1
+    
+
+    
+    
     
             
     
